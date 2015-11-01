@@ -117,7 +117,7 @@ def format_comment(comment):
 {}
 Original comment by: {}
 """.format(
-        comment['body'],
+        comment['body'].decode('utf-8'),
         '-' * 40,
         comment['user'].encode('utf-8')
     )
